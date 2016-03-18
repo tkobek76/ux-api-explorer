@@ -1,0 +1,3731 @@
+
+<!DOCTYPE HTML>
+<head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" />
+        <link rel="stylesheet"  type="text/css" href="css/custom.css" />
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.js"></script>
+
+</head>
+<body>
+     <div class="container">
+     <div class="row">
+     <div class="col-md-12">
+     <h1 class="intro">
+     API Explorer <span class="lead">Start by choosing a domain below</span>
+     </h1>
+     </div>
+     </div>
+     <div class="row">
+     <div class="col-md-12">
+     <div class="card" style="border:1px solid #7f169f;">
+     <h4 class="card-header" style="background:#7f169f;color:#ffffff;font-style: normal;">Benefits Domain APIs</h4>
+ <div class="card-block">
+ 
+ 
+     <h6 class="card-title">Summary</h6>
+     <p class="card-text">
+       The Benefits domain includes information related to current and future employee benefit enrollment. This includes medical enrollment information, flexible spending contribution amounts, retirement contributions and more.
+     </p>
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain1">Show APIs by group</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain1" class="collapse">
+<!-- inside accordion -->
+ 
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#7f169f">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Benefit Management</h4>
+    <p class="card-text">Participant Benefit Elections is the list of elections made by a participant for organization provided benefits. This specification details the Election Summary which is a list of health and welfare benefits Elections which the participant has (in force and future), and the Election Detail which gives the details of a particular benefit election.</p>
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain1-1">Show related APIs</button>
+  <!-- accordion -->
+  
+  <div id="domain1-1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Benefit Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Benefit Elections v1</td>
+      <td>Request the list of benefit coverage which is effective for the participant (current year).</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Benefit Election v1</td>
+      <td>Request the details of a benefit coverage.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+ 
+ </div><!-- end card block -->
+  
+   
+   
+</div><!-- end card -->
+
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#7f169f">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Flexible Spending Account (FSA) Management</h4>
+    <p class="card-text">This API supports Flexible Spending Accounts. It returns the list of accounts, corresponding balances, transactions against the account (e.g. claims, disbursements), and any cards which the user has associated to the account. Financial Accounts are accounts which hold monies of an account holder and have transactions which move monies in and out of the account. An example of a financial account is a Flexible Spending Account, a Commuter Account. These APIs support management of data against a financial account such as balances, transactions, card holders, money movement, etc…</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain1-2">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain1-2" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Flexible Spending Account (FSA) Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Flexible Spending Account v1</td>
+      <td>Request the financial accounts of a particular type.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Flexible Spending Account Transaction v1
+</td>
+      <td>Request a set of account transactions</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#7f169f">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Retirement Plan</h4>
+    <p class="card-text">Retirement Plans communicates the list of retirement plans that an individual has based on an election or a core benefit provided by the employer. The list provides references to the details of each retirement plan. Each retirement plan provides details of balance (vested/unvested) as of a valuation date as well as investment allocations and loan details.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain1-3">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain1-3" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Retirement Plan</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Retirement Plan Election v1</td>
+      <td>Request the list of retirement plans for an Associate with an Organization. Examples are 401k and Roth – IRA</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Retirement Plan Details v1
+</td>
+      <td>Request the details of the retirement plan</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+<!-- end accordion -->
+  </div><!-- end demo -->
+  </div><!-- end card block -->
+     </div><!-- end card -->
+     </div><!-- end col -->
+     
+     </div><!-- end row -->
+     
+     <!-- start core domain -->
+<div class="row">
+     <div class="col-md-12">
+     <div class="card" style="border: 1px solid #a01343;">
+     <h4 class="card-header" style="background:#a01343; color:#ffffff;">Core Domain APIs</h4>
+ <div class="card-block">
+ 
+ 
+     <h6 class="card-title">Summary</h6>
+     <p class="card-text">
+       The Core domain includes information related to core functions. This includes calendar, news, table/codelist, object entitlements and more.
+     </p>
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2">Show APIs by group</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2" class="collapse">
+<!-- inside accordion -->
+ 
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">Calendar</h4>
+    <p class="card-text">Calendar Detail, and Calendar Event communicate an Associate’s Calendar which is a list of events for a an Associate. Calendar Event is the details of a Calendar Event. An Associate may have upto 3 different calendars: My Calendar (My calendar events), My Team (Events on my team's calendars), and My Peer (Events on my Peers calendar).</p>
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-1">Show related APIs</button>
+  <!-- accordion -->
+  
+  <div id="domain2-1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > Calendar</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Calendar Event v1</td>
+      <td>Request a calendar event which the Associate is a recipient of.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-calendar-event-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>My Calendar Detail v1</td>
+      <td>Request the list of calendar events for an Associate’s calendar along with the configuration of the calendar (i.e. categories, event types, colors, permissive)</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-my-calendar-detail-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>My Team Calendar Detail v1</td>
+      <td>Request the list of calendar events for my team calendar along with the configuration of the calendar (i.e. categories, event types, colors, permissive)</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-my-team-calendar-detail-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Peers Calendar Detail v1</td>
+      <td>Request the list of calendar events for peers calendar along with the configuration of the calendar (i.e. categories, event types, colors, permissive)</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-peers-calendar-detail-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+ 
+ </div><!-- end card block -->
+  
+   
+   
+</div><!-- end card -->
+
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343;">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">Data</h4>
+    <p class="card-text">This API is used to upload data. Example: client can post the sales data from their system to ADP.</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-2">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2-2" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > Data</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Data Upload Event v1</td>
+      <td>To capture data upload.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-data-upload-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Data Upload Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-data-upload-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+    <th scope="row">3</th>
+      <td>Data List v1
+</td>
+      <td>Request the list of all available data posted by the client that the requester is authorized to view.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-data-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+        <tr>
+    <th scope="row">4</th>
+      <td>Data Meta v1
+</td>
+      <td>Returns a meta</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-data-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+   
+  </tbody>
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343;">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">Disclosures</h4>
+    <p class="card-text">The API displays disclosures that must be agreed to before enrollment (based on client's most current program). Disclosure documents are Fee Schedule, Privacy Policy, Terms &amp; Conditions and Cardholder Consent.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-3">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2-3" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > Disclosures</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Accept Paycard Disclosures v1</td>
+      <td>The API captures electronic consent acceptance date</td>
+      <td>    
+      <a href="https://developers.adp.com/api-explorer/resource/external-accept-paycard-disclosures-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">2</th>
+      <td>Accept Paycard Disclosures Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td>  
+      
+      <a href="https://developers.adp.com/api-explorer/resource/external-accept-paycard-disclosures-meta-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>Paycard Disclosures v1
+</td>
+      <td>
+The API displays disclosures that must be agreed to before enrollment (based on client's most current program). Disclosure documents are Fee Schedule, Privacy Policy, Terms &amp; Conditions and Cardholder Consent.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-paycard-disclosures-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+       <tr>
+      <th scope="row">4</th>
+      <td>Disclosures Meta v1
+</td>
+      <td>
+Returns a meta</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-disclosures-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+<!--start new card -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343;">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">Event Notification Messages</h4>
+    <p class="card-text">Notification of an event</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-4">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2-4" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > Event Notification Messages</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Business Rules</td>
+      <td>This is a reference list of business rules for event notification messages.</td>
+      <td>    
+      <a href="https://developers.adp.com/api-explorer/category/external/core/event-notification-message/" class="btn btn-secondary">View Rules</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">2</th>
+      <td>Event Notification Messages v1
+</td>
+      <td>Request the list of all event notification messages that the request is authorized to view.</td>
+      <td>  
+      
+      <a href="https://developers.adp.com/api-explorer/resource/external-event-notification-messages-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>Delete Event Notification Message v1
+</td>
+      <td>
+Delete the event notification message once the consumer has processed it successfully. The DELETE Acknowledges successful receipt and processing of the request.
+
+</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-event-notification-message-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+
+<!--start new card -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343;">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">News</h4>
+    <p class="card-text">News API supports the Corporate News Events. A user will see a list of news events and the details of each which he/she is authorized to see.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-5">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2-5" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > News</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Associate News v1</td>
+      <td>Request the list of news events for a given time period.</td>
+      <td>    
+      <a href="https://developers.adp.com/api-explorer/resource/external-associate-news-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">2</th>
+      <td>Organization News v1</td>
+      <td>Request the list of organization news events for a given time period.</td>
+      <td>  
+      
+      <a href="https://developers.adp.com/api-explorer/resource/external-organization-news-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>News Detail v1
+</td>
+      <td>
+Request the details of a specific news event</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-news-detail-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+     
+    
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+
+
+<!--start new card -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343;">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">Notification</h4>
+    <p class="card-text">Notifications API provides the list and details of notifications for an Associate. Notifications maybe an alert (e.g. System Maintenance), task (e.g. Approve my timesheet), notification (e.g. Timesheet was approved by your manager), or reminder (e.g. Timesheet is due).</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-6">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2-6" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > Notification</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Notifications List v1</td>
+      <td>Request the list of notifications for the user</td>
+      <td>    
+      <a href="https://developers.adp.com/api-explorer/resource/external-notifications-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">2</th>
+      <td>Notification Detail v1</td>
+      <td>Request the details of a specific notification message.</td>
+      <td>  
+      
+      <a href="https://developers.adp.com/api-explorer/resource/external-notification-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>Notification Approval v1
+</td>
+      <td>
+Create a positive or negative approval on a user notification. The Post data must contain a required notificationApproval JSON that includes an optional comment.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-paycard-disclosures-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+       <tr class="table-danger">
+      <th scope="row">4</th>
+      <td>Notification Action (DEPRECATED) v1
+</td>
+      <td>
+This API has been deprecated.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-notification-action-deprecated-v1/" class="btn btn-tertiary">View API</a></td>
+    </tr>
+    
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+
+
+<!--start new card -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343;">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">Object Entitlements</h4>
+    <p class="card-text">Object Entitlements API supports the request for objects which an Associate is authorized to. Example is an Manager is entitled to execute certain functions on a specific set of Workers.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-7">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2-7" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > Object Entitlements</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Object Entitlements v1</td>
+      <td>List the requestor’s data entitlements.</td>
+      <td>    
+      <a href="https://developers.adp.com/api-explorer/resource/external-object-entitlements-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+
+
+<!--start new card -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343;">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">Organization Locations</h4>
+    <p class="card-text">The API returns the names and addresses for all the locations of a client</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-8">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2-8" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > Organization Locations</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Paycard Organization Locations v1
+</td>
+      <td>The API returns the names and addresses for all the locations of a client</td>
+      <td>    
+      <a href="https://developers.adp.com/api-explorer/resource/external-paycard-organization-locations-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">2</th>
+      <td>Paycard Organization Location Details v1
+</td>
+      <td>Request the details of a single organization location that the requester is authorized to view</td>
+      <td>  
+      
+      <a href="https://developers.adp.com/api-explorer/resource/external-paycard-organization-location-details-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>Paycard Organization Locations Meta v1
+</td>
+      <td>
+Request a service meta information</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-paycard-organization-locations-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+      
+    
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+
+
+<!--start new card -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#a01343;">Core</h5>
+  <div class="card-block">
+    <h4 class="card-title">Table</h4>
+    <p class="card-text">Table is a generic structure used to communicate a table for the purpose of synchronizing a validation table or communicating data and meta data to build a table to display in a user interface. The table structure communicates the metadata separately from the actual data in the table.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain2-9">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain2-9" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Core > Table</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Codelist v1</td>
+      <td>Request a specific codelist</td>
+      <td>    
+      <a href="https://developers.adp.com/api-explorer/resource/external-codelist-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">2</th>
+      <td>Table – Associate v1</td>
+      <td>Request the table for table type {table-type) and {table-id} where the data returned is in the scope of what the <strong>Associate</strong> has access to view
+</td>
+      <td>  
+      
+      <a href="https://developers.adp.com/api-explorer/resource/external-table-associate-v1/" class="btn btn-primary">View API</a>
+      
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>Table – Organization v1
+</td>
+      <td>
+Request the table for table of type (table-type) and {table-id} where the data returned is in the scope of what the <strong>Organization</strong> has access to view</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-table-organization-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+      
+    
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+
+
+
+
+<!-- end accordion -->
+  </div><!-- end demo -->
+  </div><!-- end card block -->
+     </div><!-- end card -->
+     </div><!-- end col -->
+     
+     </div><!-- end row -->
+     
+     
+     
+     
+     
+     <!-- end core domain -->
+     
+<div class="row">
+     <div class="col-md-12">
+     <div class="card" style="border:1px solid #34a382;">
+     <h4 class="card-header" style="background:#34a382;color:#ffffff;">HR Domain APIs</h4>
+ <div class="card-block">
+ 
+ 
+     <h6 class="card-title">Summary</h6>
+     <p class="card-text">
+       The HR domain includes worker details. This includes the natural person as well as job title, organizational hierarchy, corporate directory and mor
+     </p>
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain3">Show APIs by group</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain3" class="collapse">
+<!-- inside accordion -->
+ 
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#34a382;">HR</h5>
+  <div class="card-block">
+    <h4 class="card-title">Associate Contacts</h4>
+    <p class="card-text">Associate Contacts API supports the retrieval of a collection of Associates of an organization. An associate is a person in the context of an organization. The API returns the name and contact information for an associate or a collection of associates.</p>
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain3-1">Show related APIs</button>
+  <!-- accordion -->
+  
+  <div id="domain3-1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>HR > Associate Contacts</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Associate Contacts List v1</td>
+      <td>Request the list of all available associate contacts that the requester is authorized to view.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-associate-contacts-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Associate Contact Detail v1
+</td>
+      <td>Return an associate contact.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-associate-contact-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+ 
+ </div><!-- end card block -->
+  
+   
+   
+</div><!-- end card -->
+
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#34a382;">HR</h5>
+  <div class="card-block">
+    <h4 class="card-title">Corporate Directory</h4>
+    <p class="card-text">A Corporate Directory maintains a list of corporate contacts. Each corporate contact may have the name, title, organizational unit (e.g. department), reports to manager, photo, and the business location address, business phone numbers, business emails, and business social media accounts (e.g. LinkedIn URI)</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain3-2">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain3-2" class="collapse">
+  
+  <h4>
+ Available APIs: <small>HR > Corporate Directory</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Corporate Directory v1</td>
+      <td>Request the list of corporate directory entries.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-corporate-directory-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Corporate Contact v1
+</td>
+      <td>Request the details of a contact</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-corporate-contact-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+
+ 
+ <div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#34a382;">HR</h5>
+  <div class="card-block">
+    <h4 class="card-title">Personal contact</h4>
+    <p class="card-text">The Personal Contacts API supports the management of an Associate's personal contacts (e.g. Emergency Contacts)</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain3-3">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain3-3" class="collapse">
+  
+  <h4>
+ Available APIs: <small>HR > Personal Contact</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Add Personal Contact v1</td>
+      <td>A worker adds a personal contact.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-personal-contact-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Add Personal Contact Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-add-personal-contact-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">3</th>
+      <td>Change Personal Contact v1</td>
+      <td>A worker updates an existing personal contact.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-personal-contact-v1-2/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   
+    <tr>
+      <th scope="row">4</th>
+      <td>Change Personal Contact Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-personal-contact-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">5</th>
+      <td>Remove Personal Contact v1</td>
+      <td>A worker removes a personal contact.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-remove-personal-contact-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    
+    
+    <tr>
+      <th scope="row">6</th>
+      <td>Remove Personal Contact Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-remove-personal-contact-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">7</th>
+      <td>Personal Contacts List v2</td>
+      <td>Request the list of all available personal contacts that the requester is authorized to view.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-personal-contacts-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">8</th>
+      <td>Personal Contact Detail v2</td>
+      <td>Returns a personal contact</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-personal-contact-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">9</th>
+      <td>Personal Contact Meta v2</td>
+      <td>Returns a meta</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-personal-contact-meta-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+   
+  </tbody>
+</table>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- end inner card section -->
+ 
+ <div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#34a382;">HR</h5>
+  <div class="card-block">
+    <h4 class="card-title">Policy Acknowledgement</h4>
+    <p class="card-text">Worker policy acknowledgement</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain3-4">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain3-4" class="collapse">
+  
+  <h4>
+ Available APIs: <small>HR > Policy Acknowledgement</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Policy Acknowledgements – Associate List v1
+</td>
+      <td>List of all policy acknowledgements for a given worker identified by ID that the requester is authorized to view</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-policy-acknowledgements-associate-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Policy Acknowledgement – Associate Detail v1
+</td>
+      <td>Request a specific policy for a given worker
+</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-policy-acknowledgement-associate-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+     <tr>
+      <th scope="row">3</th>
+      <td>Policy Acknowledgement – Confirmation v1
+</td>
+      <td>Record an acknowledgement of a single policy identified by ID. No payload is required</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-policy-acknowledgement-confirmation-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+     <tr>
+      <th scope="row">4</th>
+      <td>Policy Acknowledgements – Manager v1
+</td>
+      <td>List of policy acknowledgements for all direct reports of a manager in context that the requester is authorized to view</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- end inner card section -->
+
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#34a382;">HR</h5>
+  <div class="card-block">
+    <h4 class="card-title">Worker</h4>
+    <p class="card-text">The Workers API supports the management of workers. A worker is a person who performs duties and responsibilities for an organization. In that capacity, a worker may fill one or more positions via a work assignment. For a given work assignment, a worker is related to the organization as</p>
+<ul>
+<li>An employee or permanent worker</li>
+<li>A contractor or fixed term worker, e.g. seasonal workers, interns</li>
+<li>A casual worker</li>
+<li>An apprentice</li>
+<li>A vendor employee</li>
+</ul>
+
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain3-5">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain3-5" class="collapse">
+  
+  <h4>
+ Available APIs: <small>HR > Worker </small>
+ </h4>
+     <table class="table table-hover">
+<h5 style="padding-top: 20px;">
+Business Contact Mechanism
+</h5>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+ <th><p class="lead">
+ Email
+ </p></th>
+    <tr>
+      <th scope="row">1</th>
+      <td>Worker Business <strong>Email v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a business email.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-email-v1/" class="btn btn-success">Add Email API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-email-v1/" class="btn btn-warning">Change Email API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-email-v1/" class="btn btn-danger">Remove Email API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Worker Business <strong>Email Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-email-meta-v1/" class="btn btn-success">Email Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-email-meta-v1/" class="btn btn-warning">Email Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-email-meta-v1/" class="btn btn-danger">Email Remove Meta</a>
+      </td>
+    </tr>
+    </tbody>
+<!-- fax -->
+<tbody>
+<th><p class="lead">
+ Fax
+ </p></th>
+<tr>
+      <th scope="row">3</th>
+      <td>Worker Business <strong>Fax v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a business fax.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-fax-v1/" class="btn btn-success">Add Fax API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-fax-v1/" class="btn btn-warning">Change Fax API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-fax-v1/" class="btn btn-danger">Remove Fax API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Worker Business <strong>Fax Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-fax-meta-v1/" class="btn btn-success">Fax Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-fax-meta-v1/" class="btn btn-warning">Fax Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-fax-meta-v1/" class="btn btn-danger">Fax Remove Meta</a>
+      </td>
+    </tr>
+    </tbody>
+    <!-- landline -->
+<tbody>
+<th><p class="lead">
+ Landline
+ </p></th>
+<tr>
+      <th scope="row">5</th>
+      <td>Worker Business <strong>Landline v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a business landline.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-landline-v1/" class="btn btn-success">Add Landline API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-landline-v1/" class="btn btn-warning">Change Landline API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-landline-v1/" class="btn btn-danger">Remove Landline API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Worker Business <strong>Landline Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-landline-meta-v1/" class="btn btn-success">Landline Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-landline-meta-v1/" class="btn btn-warning">Landline Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-landline-meta-v1/" class="btn btn-danger">Landline Remove Meta</a>
+      </td>
+    </tr>
+    </tbody>
+    <!-- mobile -->
+    <tbody>
+  <th><p class="lead">
+Mobile
+ </p></th>
+<tr>
+      <th scope="row">7</th>
+      <td>Worker Business <strong>Mobile v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a business mobile.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-mobile-v1/" class="btn btn-success">Add Mobile API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-mobile-v1/" class="btn btn-warning">Change Mobile API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-mobile-v1/" class="btn btn-danger">Remove Mobile API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Worker Business <strong>Mobile Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-mobile-meta-v1/" class="btn btn-success">Mobile Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-mobile-meta-v1/" class="btn btn-warning">Mobile Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-mobile-meta-v1/" class="btn btn-danger">Mobile Remove Meta</a>
+      </td>
+    </tr>
+    </tbody>
+    <!-- pager -->
+    <tbody>
+   <th><p class="lead">
+ Pager
+ </p></th>
+<tr>
+      <th scope="row">9</th>
+      <td>Worker Business <strong>Pager v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a business pager.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-pager-v1/" class="btn btn-success">Add Pager API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-pager-v1/" class="btn btn-warning">Change Pager API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-pager-v1/" class="btn btn-danger">Remove Pager API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Worker Business <strong>Pager Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-pager-meta-v1/" class="btn btn-success">Pager Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-pager-meta-v1/" class="btn btn-warning">Pager Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-pager-meta-v1/" class="btn btn-danger">Pager Remove Meta</a>
+      </td>
+    </tr>
+   
+  </tbody>
+</table>
+
+ <table class="table table-hover">
+<h5 style="padding-top: 20px;">
+Compensation
+</h5>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Additional Remuneration v1</td>
+           <td>Depending on the corresponding API used, a worker additional remuneration can be added, change or remove.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-pager-v1/" class="btn btn-success">Add</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-pager-v1/" class="btn btn-warning">Change</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-pager-v1/" class="btn btn-danger">Remove</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Additional Remuneration Meta v1</td>
+           <td>Depending on the corresponding API used, a worker additional remuneration can be added, change or remove.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-business-pager-v1/" class="btn btn-success">Meta Add</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-business-pager-v1/" class="btn btn-warning">Meta Change</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-pager-v1/" class="btn btn-danger">Meta Remove</a>
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>Change Base Renumeration v1
+</td>
+      <td>A worker base remuneration change management</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-base-remuneration-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Change Base Renumeration Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td></td>
+      <td></td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+
+ <table class="table table-hover">
+<h5 style="padding-top: 20px;">
+Custom Data
+</h5>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+  <th><p class="lead">
+  Amount
+  </p>
+ </th>
+    <tr>
+      <th scope="row">1</th>
+      <td>Change Worker Custom Amount v1</td>
+      <td>A worker changes a custom field that is an amount.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-custom-amount-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Change Worker Custom Amount Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-worker-custom-amount-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  <!-- code -->
+  <tbody>
+  <th><p class="lead">
+  Code
+  </p>
+ </th>
+    <tr>
+      <th scope="row">3</th>
+      <td>Change Worker Custom Code v1</td>
+      <td>A worker changes a custom field that is a code</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-custom-code-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Change Worker Customer Code Meta v1
+</td>
+      <td>Returns an event metadata
+</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  <!-- date -->
+  <tbody>
+  <th><p class="lead">
+  Date
+  </p>
+ </th>
+    <tr>
+      <th scope="row">5</th>
+      <td>Change Worker Custom Date v1</td>
+      <td>A worker changes a custom field that is a date</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Change Worker Custom Date Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <!-- datetime -->
+  <tbody>
+  <th><p class="lead">
+  Datetime
+  </p>
+ </th>
+    <tr>
+      <th scope="row">7</th>
+      <td>Change Worker Custom Datetime v1</td>
+      <td>A worker changes a custom field that is a datetime.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Change Worker Custom Datetime Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <!-- Indicator -->
+  <tbody>
+  <th><p class="lead">
+  Indicator
+  </p>
+ </th>
+    <tr>
+      <th scope="row">9</th>
+      <td>Change Worker Custom Indicator v1</td>
+      <td>A worker changes a custom field that is an indicator.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Change Worker Custom Indicator Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <!-- Number -->
+  
+  <tbody>
+  <th><p class="lead">
+  Number
+  </p>
+ </th>
+    <tr>
+      <th scope="row">11</th>
+      <td>Change Worker Custom Number v1</td>
+      <td>A worker changes a custom field that is a number.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>Change Worker Custom Number Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <!-- Percentage -->
+  
+  <tbody>
+  <th><p class="lead">
+  Percentage
+  </p>
+ </th>
+    <tr>
+      <th scope="row">13</th>
+      <td>Change Worker Custom Percentage v1</td>
+      <td>A worker changes a custom field that is a percentage.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>Change Worker Custom Percentage Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <!-- Person -->
+  
+  <tbody>
+  <th><p class="lead">
+  Person
+  </p>
+ </th>
+    <tr>
+      <th scope="row">15</th>
+      <td>Change Person Custom Amount v1</td>
+      <td>A worker changes a person custom field that is an amount.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">16</th>
+      <td>Change Person Custom Amount Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">17</th>
+      <td>Change Person Custom Code v1</td>
+      <td>A worker changes a person custom field that is a code.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">18</th>
+      <td>Change Person Custom Code Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   
+   <tr>
+      <th scope="row">19</th>
+      <td>Change Person Custom Date v1</td>
+      <td>A worker changes a person custom field that is a date.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">20</th>
+      <td>Change Person Custom Date Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">21</th>
+      <td>Change Person Custom Datetime v1</td>
+      <td>A worker changes a person custom field that is a datetime.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">22</th>
+      <td>Change Person Custom Datetime Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+     <tr>
+      <th scope="row">23</th>
+      <td>Change Person Custom Indicator v1</td>
+      <td>A worker changes a person custom field that is an indicator.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">24</th>
+      <td>Change Person Custom Indicator Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+    <tr>
+      <th scope="row">25</th>
+      <td>Change Person Custom Number v1</td>
+      <td>A worker changes a person custom field that is a number.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">26</th>
+      <td>Change Person Custom Number Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">27</th>
+      <td>Change Person Custom Percentage v1</td>
+      <td>A worker changes a person custom field that is a percentage.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">28</th>
+      <td>Change Person Custom Percentage Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">29</th>
+      <td>Change Person Custom String v1</td>
+      <td>A worker changes a person custom field that is a string.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">30</th>
+      <td>Change Person Custom String Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">31</th>
+      <td>Change Person Custom Telephone v1</td>
+      <td>A worker changes a person custom field that is a telephone.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">32</th>
+      <td>Change Person Custom Telephone Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <!-- string -->
+  
+  <tbody>
+  <th><p class="lead">
+  String
+  </p>
+ </th>
+    <tr>
+      <th scope="row">33</th>
+      <td>Change Worker Custom String v1</td>
+      <td>A worker changes a custom field that is a string.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">34</th>
+      <td>Change Worker Custom String Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <!-- telephone -->
+  
+  <tbody>
+  <th><p class="lead">
+  Telephone
+  </p>
+ </th>
+    <tr>
+      <th scope="row">35</th>
+      <td>Change Worker Custom Telephone v1</td>
+      <td>A worker changes a custom field that is a telephone.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">36</th>
+      <td>Change Worker Custom Telephone Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+</table>
+
+ <table class="table table-hover">
+<h5 style="padding-top: 20px;">
+Demographic 
+</h5>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <!--DECEASED -->
+  <tbody>
+    <th><p class="lead">
+  Deceased
+  </p>
+ </th>
+    <tr>
+      <th scope="row">1</th>
+      <td>Worker Deceased v1
+</td>
+      <td>A worker is now deceased.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-worker-deceased-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Worker Deceased Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-worker-deceased-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  <!-- marital status -->
+  
+  <tbody>
+  <th><p class="lead">
+  Marital Status
+  </p>
+ </th>
+    <tr>
+      <th scope="row">3</th>
+      <td>Change Worker Marital Status v1</td>
+      <td>A worker's marital status has changed.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-marital-status-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Change Worker Marital Status Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-worker-marital-status-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  <!-- military -->
+  
+  <tbody>
+  <th><p class="lead">
+  Military
+  </p>
+ </th>
+    <tr>
+      <th scope="row">5</th>
+      <td>Change Worker Military Classification v1</td>
+      <td>A worker military classification has changed, e.g. vets100 reporting indicators.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-military-classification-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Change Worker Military Classification Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-worker-military-classification-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">7</th>
+      <td>Change Worker Military Status v1</td>
+      <td>A worker military status has changed.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-birth-name-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">8</th>
+      <td>Change Worker Military Status Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-worker-military-status-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  <!-- Name change -->
+  
+  <tbody>
+  <th><p class="lead">
+  Name Change
+  </p>
+ </th>
+    <tr>
+      <th scope="row">9</th>
+      <td>Change Birth Name v1</td>
+      <td>A worker's birth name is updated.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-birth-name-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Change Birth Name Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-birth-name-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+     <tr>
+      <th scope="row">11</th>
+      <td>Change Legal Name v1</td>
+      <td>A worker changes his/her legal name in a given context.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-legal-name-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>Change Legal Name Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-legal-name-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+
+ <table class="table table-hover">
+<h5 style="padding-top: 20px;">
+Lifecycle
+</h5>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Hire Worker v1</td>
+      <td>The worker.hire event indicates the creation of a work agreement between a person and an employer for the first time EVER. Worker.Hire always results in a primary work assignment. Worker.hire may result in a worker status of either 'Active' or 'Pending' depending on whether or not the Worker.Start event is supported by the system of record. Use API when a worker is hired.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-hire-worker-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Hire Worker Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-hire-worker-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   
+   <tr>
+      <th scope="row">3</th>
+      <td>Worker On Leave v1</td>
+      <td>The worker.on-leave event indicates that the worker has started leave, and that the leave crosses all work assignments. This is conveyed via a worker status change to 'On Leave'. Use API when worker on leave. Example: Worker's status changed to on leave effective on such and such a date.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-worker-on-leave-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Worker On Leave Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-worker-on-leave-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+     <tr>
+      <th scope="row">5</th>
+      <td>Rehire Worker v1</td>
+      <td>A worker is rehired.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-rehire-worker-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Rehire Worker Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-rehire-worker-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+     <tr>
+      <th scope="row">7</th>
+      <td>Worker Starts v1</td>
+      <td>The worker.start event indicates that the worker has actually shown up for work for the first time EVER. This is conveyed via a worker status change from 'Pending' to 'Active' and the valuing of the actualStartDate property.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-worker-starts-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Worker Starts Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-worker-starts-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">9</th>
+      <td>Terminate Worker v1</td>
+      <td>The worker.terminate event indicates that the worker has been terminated at the highest level, across all work assignments. This is conveyed via a worker status change to 'Terminated'. This event may be refined to explain the reason for the termination via the event reason code. For example, the communication that a worker has retired and no longer works for the employer in any capacity would be conveyed as a worker status of 'Terminated' and an event reason code of 'Retired'. Use this API when a worker is terminated involuntarily.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-terminate-worker-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Terminate Worker Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-terminate-worker-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   
+  </tbody>
+</table>
+
+ <table class="table table-hover">
+<h5 style="padding-top: 20px;">
+Person Contact Mechanism
+</h5>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+ <th><p class="lead">
+ Email
+ </p></th>
+    <tr>
+      <th scope="row">1</th>
+      <td>Worker Personal <strong>Email v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a personal email from system.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-email-v1/" class="btn btn-success">Add Email API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-email-v1/" class="btn btn-warning">Change Email API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-email-v1/" class="btn btn-danger">Remove Email API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Worker Personal <strong>Email Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-email-meta-v1/" class="btn btn-success">Email Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-email-meta-v1/" class="btn btn-warning">Email Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-email-meta-v1/" class="btn btn-danger">Email Remove Meta</a>
+      </td>
+    </tr>
+    </tbody>
+<!-- fax -->
+<tbody>
+<th><p class="lead">
+ Fax
+ </p></th>
+<tr>
+      <th scope="row">3</th>
+      <td>Worker Personal <strong>Fax v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a personal fax number.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-fax-v1/" class="btn btn-success">Add Fax API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-fax-v1/" class="btn btn-warning">Change Fax API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-fax-v1/" class="btn btn-danger">Remove Fax API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Worker Personal <strong>Fax Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-fax-meta-v1/" class="btn btn-success">Fax Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-fax-meta-v1/" class="btn btn-warning">Fax Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-fax-meta-v1/" class="btn btn-danger">Fax Remove Meta</a>
+      </td>
+    </tr>
+    </tbody>
+    <!-- landline -->
+<tbody>
+<th><p class="lead">
+ Landline
+ </p></th>
+<tr>
+      <th scope="row">5</th>
+      <td>Worker Personal <strong>Landline v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a business landline.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-landline-v1/" class="btn btn-success">Add Landline API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-landline-v1/" class="btn btn-warning">Change Landline API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-landline-v1/" class="btn btn-danger">Remove Landline API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Worker Personal <strong>Landline Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-landline-meta-v1/" class="btn btn-success">Landline Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-landline-meta-v1/" class="btn btn-warning">Landline Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-landline-meta-v1/" class="btn btn-danger">Landline Remove Meta</a>
+      </td>
+    </tr>
+    </tbody>
+        <!-- legal address -->
+<tbody>
+<th><p class="lead">
+ Legal Address
+ </p></th>
+<tr>
+      <th scope="row">7</th>
+      <td>Worker Legal <strong>Address v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a legal address.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-legal-address-v1/" class="btn btn-success">Add Legal Address API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-legal-address-v1/" class="btn btn-warning">Change Legal Address API</a></td>
+    <td>  </td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Worker <strong>Legal Address Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-legal-address-meta-v1/" class="btn btn-success">Legal Address Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-legal-address-meta-v1/" class="btn btn-warning">Legal Address Change Meta</a></td>
+    <td>  
+      </td>
+    </tr>
+    </tbody>
+    
+    <!-- mobile -->
+    <tbody>
+  <th><p class="lead">
+Mobile
+ </p></th>
+<tr>
+      <th scope="row">9</th>
+      <td>Worker Personal <strong>Mobile v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a personal mobile.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-mobile-v1/" class="btn btn-success">Add Mobile API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-mobile-v1/" class="btn btn-warning">Change Mobile API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-mobile-v1/" class="btn btn-danger">Remove Mobile API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Worker Personal <strong>Mobile Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-mobile-meta-v1/" class="btn btn-success">Mobile Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-mobile-meta-v1/" class="btn btn-warning">Mobile Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-mobile-meta-v1/" class="btn btn-danger">Mobile Remove Meta</a>
+      </td>
+    </tr>
+    </tbody>
+    <!-- pager -->
+    <tbody>
+   <th><p class="lead">
+ Pager
+ </p></th>
+<tr>
+      <th scope="row">11</th>
+      <td>Worker Personal <strong>Pager v1</strong></td>
+      <td>Depending on the corresponding API used, a worker can add, change or remove a personal pager number.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-pager-v1/" class="btn btn-success">Add Pager API</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-pager-v1/" class="btn btn-warning">Change Pager API</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-business-pager-v1/" class="btn btn-danger">Remove Pager API</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>Worker Personal <strong>Pager Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+       <td>    <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-pager-meta-v1/" class="btn btn-success">Pager Add Meta</a></td>
+      <td> <a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-pager-meta-v1/" class="btn btn-warning">Pager Change Meta</a></td>
+    <td>  <a href="https://developers.adp.com/api-explorer/resource/external-remove-worker-personal-pager-meta-v1/" class="btn btn-danger">Pager Remove Meta</a>
+      </td>
+    </tr>
+   
+  </tbody>
+  
+   <!-- personal address -->
+    <tbody>
+   <th><p class="lead">
+ Personal Address
+ </p></th>
+<tr>
+      <th scope="row">13</th>
+      <td>Worker <strong>Personal Address v1</strong></td>
+      <td>A worker can change a personal address.</td>
+      <td>    </td>
+      <td> </td>
+    <td> <a href="https://developers.adp.com/api-explorer/resource/external-add-worker-personal-pager-v1/" class="btn btn-primary">View API</a> 
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>Worker Personal <strong>Address Meta v1</strong>
+</td>
+      <td>Returns an event metadata</td>
+   <td></td>
+   <td></td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-worker-personal-address-meta-v1/" class="btn btn-primary">View API</a> </td> 
+     
+    </tr>
+   
+  </tbody>
+  
+</table>
+
+
+ <table class="table table-hover">
+<h5 style="padding-top: 20px;">
+Work Deployment
+</h5>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Change Home Work Location v1</td>
+      <td>The home work location of the work assignment is changed.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-home-work-location-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Change Home Work Location Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-home-work-location-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <th scope="row">3</th>
+      <td>Change Assigned Work Location v1</td>
+      <td>A worker's assigned work location is changed.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-assigned-work-location-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Change Assigned Work Location Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-assigned-work-location-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <th scope="row">5</th>
+      <td>Change Standard Hours v1</td>
+      <td>A worker's number of standard hours is changed.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-standard-hours-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Change Standard Hours Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-standard-hours-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <th scope="row">7</th>
+      <td>Change Work Level v1</td>
+      <td>A worker's work level, e.g. fulltime versus part-time, is changed.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-change-work-level-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Change Work Level Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-change-work-level-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+</table>
+
+
+ <table class="table table-hover">
+<h5 style="padding-top: 20px;">
+Worker v2
+</h5>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Workers List v2</td>
+      <td>Request the list of all available workers that the requester is authorized to view.
+</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-workers-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Worker Detail v2
+</td>
+      <td>Returns a worker</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-worker-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>Worker Photo v2
+</td>
+      <td>Request a photo</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-worker-photo-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">4</th>
+      <td>Worker Meta v2
+</td>
+      <td>Returns a meta</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-worker-meta-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+
+
+  </div><!-- end collapse -->
+
+ 
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+
+
+
+<!-- end accordion -->
+  </div><!-- end demo -->
+  </div><!-- end card block -->
+     </div><!-- end card -->
+     </div><!-- end col -->
+     
+     </div><!-- end row -->
+     
+     <!-- start new card -->
+     
+
+
+     
+     <!-- end HR domain -->
+     
+<div class="row">
+     <div class="col-md-12">
+     <div class="card">
+     <h4 class="card-header" style="background:#4fbedc;color:#fff;">Payroll Domain APIs</h4>
+ <div class="card-block">
+ 
+ 
+     <h6 class="card-title">Summary</h6>
+     <p class="card-text">
+       The Payroll domain includes information related to employee earnings and taxes. This includes elements from a typical pay statement, such as gross earnings, net earnings, federal / state income taxes and more.
+     </p>
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4">Show APIs by group</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain4" class="collapse">
+<!-- inside accordion -->
+ 
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#4fbedc;">Payroll</h5>
+  <div class="card-block">
+    <h4 class="card-title">ATM Locations</h4>
+    <p class="card-text">ATM Locator API supports the requesting of atm locations within a specific radius. ATMs are Electronic Cash Machines. These can be ATMs, cashiers which provide reload capability.</p>
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4-1">Show related APIs</button>
+  <!-- accordion -->
+  
+  <div id="domain4-1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Payroll > ATM Locator</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>ATM Locations v1</td>
+      <td>Return list of locations and properties.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-atm-locations-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   
+  </tbody>
+</table>
+  </div>
+
+ 
+ </div><!-- end card block -->
+  
+   
+   
+</div><!-- end card -->
+
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#4fbedc;">Payroll</h5>
+  <div class="card-block">
+    <h4 class="card-title">Financial Account</h4>
+    <p class="card-text">Financial Accounts are accounts which hold monies of an account holder and have transactions which move monies in and out of the account. An example of a financial account is a prepaid account. These APIs support management of data against a financial account such as balances, transactions, card holders, money movement, etc…</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4-2">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain4-2" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Payroll > Financial Account</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Financial Accounts v1</td>
+      <td>Request the financial accounts of a particular type.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-financial-accounts-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Financial Account Details v1</td>
+      <td>Request a specific account details for a given associate</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-financial-account-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <th scope="row">3</th>
+      <td>Financial Account Transaction Details v1</td>
+      <td>Request a set of account transactions.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-financial-account-transaction-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Financial Account Disclosure v1</td>
+      <td>Request the pay card specific disclosures (T&amp;C’s, privacy policy, fees)</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-financial-account-disclosure-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <th scope="row">5</th>
+      <td>Financial Account Advertisement v1
+</td>
+      <td>Request the pay card related advertisements (banners and full ads). Must be HTML.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-financial-account-advertisement-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Financial Account Enrollment v1</td>
+      <td>Request associate indicative information to pre-populate personal information as well as disclosures related to the enrollment</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-financial-account-enrollment-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <th scope="row">7</th>
+      <td>Financial Account Enrollment Submit v1</td>
+      <td>Submit the entire registration data for the card approval</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-financial-account-enrollment-submit-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Financial Account Funding Request v1
+</td>
+      <td>Submit the alternate funding request</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-financial-account-funding-request-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+    <tbody>
+    <tr>
+      <th scope="row">9</th>
+      <td>Financial Account Address v1
+</td>
+      <td>Submit address for validation by Pay Card Proxy (VISA)</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-financial-account-address-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Financial Account Funding Status v1</td>
+      <td>Get the alternate funding request status</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-financial-account-funding-status-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+
+
+
+
+
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#4fbedc;">Payroll</h5>
+  <div class="card-block">
+    <h4 class="card-title">Initiate Paycard Funding</h4>
+    <p class="card-text">The Payroll domain includes information related to employee earnings and taxes. This includes elements from a typical pay statement, such as gross earnings, net earnings, federal / state income taxes and more.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4-3">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain4-3" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Payroll > Initiate Paycard Funding</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Initiate Paycard Funding v1 Business Rules</td>
+      <td>An instance to capture an event when an associate's paycard is funded by the employer</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/category/external/payroll/initiate-paycard-funding/initiate-funding/" class="btn btn-secondary">View Business Rules</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Initiate Paycard Funding v1
+</td>
+      <td>Paycard funding initiated by the employer</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-initiate-paycard-funding-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Initiate Paycard Funding Meta v1
+</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-initiate-paycard-funding-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+<!-- start pay distributions -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#4fbedc;">Payroll</h5>
+  <div class="card-block">
+    <h4 class="card-title">Pay Distributions</h4>
+    <p class="card-text">The Pay Distributions API supports a worker managing how he/she wants his pay distributed (e.g. 50% to savings, 25% to checking, $100 on a paycard, and the remainder in check).</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4-4">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain4-4" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Payroll > Pay Distributions</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Pay Distributions v2</td>
+      <td>Request all available pay distributions for a worker
+</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-pay-distributions-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Get Default Pay Distribution v2</td>
+      <td>Returns a pay distribution</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-get-default-pay-distribution-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+  <tbody>
+    <tr>
+      <th scope="row">3</th>
+      <td>Pay Distribution Meta v2</td>
+      <td>Returns a meta.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-pay-distribution-meta-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+   
+
+  </tbody>
+  
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+
+<!-- start pay statement -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#4fbedc;">Payroll</h5>
+  <div class="card-block">
+    <h4 class="card-title">Pay Statement</h4>
+    <p class="card-text">A Pay Statement is the details of a payment made to a payee. These details include the Net and Gross Amount, Deductions, Earnings, Year to Date Payroll Accruals.</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4-5">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain4-5" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Payroll > Pay Statement</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Pay Statements List v1</td>
+      <td>Request the list of the last n payStatements for an Associate. Default = payStatements from the last 5 pay dates.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-pay-statements-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Pay Statement Detail v1</td>
+      <td>Request the details of a specific pay statement.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-pay-statement-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+    
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+
+<!-- start paycard enrollment -->
+
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#4fbedc;">Payroll</h5>
+  <div class="card-block">
+    <h4 class="card-title">Paycard Enrollment</h4>
+    <p class="card-text">This group of APIs allows for submission of the pay card enrollment by sending the user details such as, names, SSN, phone number, address, and funding accounts/proxy id number etc., validating the paycard account, verifying associate eligibility and returning enrollment status.</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4-6">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain4-6" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Payroll > Paycard Enrollment</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Paycard Enrollment for Employee and Practioners (Required Services) </td>
+      <td>This list and diagram delineate the services required to complete the employee self-enrollment process as well as the practioner enrollment process.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/category/external/payroll/paycard-enrollment/" class="btn btn-secondary">View Info</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Enroll in Paycard Post v1</td>
+      <td>The API submits the pay card enrollment by sending the user details such as, names, SSN, phone number, address, and funding accounts/proxy id number etc.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-enroll-in-paycard-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>Enroll in Paycard Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-enroll-in-paycard-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">4</th>
+      <td>Validate Paycard Address v1</td>
+      <td>The API performs USPS address check</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-validate-paycard-address-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">5</th>
+      <td>Validate Paycard Address Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-validate-paycard-address-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">6</th>
+      <td>Validate Paycard Account v1</td>
+      <td>The API validates the proxy id and account number that are used during the card enrollment</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-validate-paycard-account-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">7</th>
+      <td>Validate Paycard Account Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-validate-paycard-account-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">8</th>
+      <td>Verify Associate Paycard Eligibility v1</td>
+      <td>The API checks if an employee is eligible to enroll. Checks includes whether the client is setup for self-enrollment, the user exists in the system and has an active card etc.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-verify-associate-paycard-eligibility-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">9</th>
+      <td>Verify Associate Paycard Eligibility Meta v1</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-verify-associate-paycard-eligibility-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+     <tr>
+      <th scope="row">10</th>
+      <td>Paycard Enrollment Status v2</td>
+      <td>The API returns the enrollment status: 'done' or 'pending'</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-paycard-enrollment-status-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+    
+     <tr>
+      <th scope="row">11</th>
+      <td>Paycard Enrollment Status Meta v2</td>
+      <td>Returns an event metadata</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-paycard-enrollment-status-meta-v2/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+
+  
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+
+<!-- start paycard funding accounts  -->
+
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#4fbedc;">Payroll</h5>
+  <div class="card-block">
+    <h4 class="card-title">Paycard Funding Accounts</h4>
+    <p class="card-text">The API returns all the funding accounts for a client in a given location. The funding account is a client-specific account used to fund a pre-paid card.
+    </p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4-7">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain4-7" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Payroll > Paycard Funding Accounts</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Paycard Funding Accounts v1</td>
+      <td>The API returns all the funding accounts for a client in a given location. The funding account is a client-specific account used to fund a pre-paid card.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-paycard-funding-accounts-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Paycard Funding Account Details v1</td>
+      <td>Return a funding account details</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-paycard-funding-account-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  
+    <tr>
+      <th scope="row">3</th>
+      <td>Funding Account Meta v1</td>
+      <td>Returns a meta.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-funding-account-meta-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+  
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+
+<!-- start tax statement -->
+
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header" style="color:#4fbedc;">Payroll</h5>
+  <div class="card-block">
+    <h4 class="card-title">Tax Statement</h4>
+    <p class="card-text">Worker Tax Statements APIs support the viewing of the list of Worker’s Tax Statements (e.g. in US W-2, 1099), and the details of each tax statement.</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain4-8">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain4-8" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Payroll > Tax Statement</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Tax Statements List v1</td>
+      <td>Request the list of worker tax statements.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-tax-statements-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Tax Statement Detail v1</td>
+      <td>Request the details of a worker’s tax statement.
+The {id} uniquely identifies the worker’s tax statement.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-tax-statement-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  
+  </tbody>
+  
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+<!-- end tax statement -->
+
+<!-- end accordion -->
+  </div><!-- end demo -->
+  </div><!-- end card block -->
+     </div><!-- end card -->
+     </div><!-- end col -->
+     
+     </div><!-- end row -->
+     
+     
+     
+     <!-- end payroll domain -->
+     
+     <div class="row">
+     <div class="col-md-12">
+     <div class="card">
+     <h4 class="card-header">Staffing Domain APIs</h4>
+ <div class="card-block">
+ 
+ 
+     <h6 class="card-title">Summary</h6>
+     <p class="card-text">
+       The Staffing domain includes information related to recruitment lifecycle. This includes job requisiton, applicant information, onboarding process and more.
+
+
+     </p>
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain5">Show APIs by group</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain5" class="collapse">
+<!-- inside accordion -->
+ 
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Staffing</h5>
+  <div class="card-block">
+    <h4 class="card-title">Job Applications</h4>
+    <p class="card-text">PLorem ipsum</p>
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain5-1">Show related APIs</button>
+  <!-- accordion -->
+  
+  <div id="domain5-1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Staffing > Job Applications</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Benefit Elections v1</td>
+      <td>Request the list of benefit coverage which is effective for the participant (current year).</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Benefit Election v1</td>
+      <td>Request the details of a benefit coverage.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+ 
+ </div><!-- end card block -->
+  
+   
+   
+</div><!-- end card -->
+
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Flexible Spending Account (FSA) Management</h4>
+    <p class="card-text">This API supports Flexible Spending Accounts. It returns the list of accounts, corresponding balances, transactions against the account (e.g. claims, disbursements), and any cards which the user has associated to the account. Financial Accounts are accounts which hold monies of an account holder and have transactions which move monies in and out of the account. An example of a financial account is a Flexible Spending Account, a Commuter Account. These APIs support management of data against a financial account such as balances, transactions, card holders, money movement, etc…</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="demo1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Flexible Spending Account (FSA) Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Flexible Spending Account v1</td>
+      <td>Request the financial accounts of a particular type.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Flexible Spending Account Transaction v1
+</td>
+      <td>Request a set of account transactions</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Retirement Plan</h4>
+    <p class="card-text">Retirement Plans communicates the list of retirement plans that an individual has based on an election or a core benefit provided by the employer. The list provides references to the details of each retirement plan. Each retirement plan provides details of balance (vested/unvested) as of a valuation date as well as investment allocations and loan details.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="demo2" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Retirement Plan</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Retirement Plan Election v1</td>
+      <td>Request the list of retirement plans for an Associate with an Organization. Examples are 401k and Roth – IRA</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Retirement Plan Details v1
+</td>
+      <td>Request the details of the retirement plan</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+<!-- end accordion -->
+  </div><!-- end demo -->
+  </div><!-- end card block -->
+     </div><!-- end card -->
+     </div><!-- end col -->
+     
+     </div><!-- end row -->
+     
+     <!-- end staffing domain -->
+     
+<div class="row">
+     <div class="col-md-12">
+     <div class="card">
+     <h4 class="card-header">Talent Domain APIs</h4>
+ <div class="card-block">
+ 
+ 
+     <h6 class="card-title">Summary</h6>
+     <p class="card-text">
+     The Talent domain includes information related to an employee’s talent profile. This includes performance review scores, goal setting information and more.
+     </p>
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain1">Show APIs by group</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain1" class="collapse">
+<!-- inside accordion -->
+ 
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Benefit Management</h4>
+    <p class="card-text">Participant Benefit Elections is the list of elections made by a participant for organization provided benefits. This specification details the Election Summary which is a list of health and welfare benefits Elections which the participant has (in force and future), and the Election Detail which gives the details of a particular benefit election.</p>
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Show related APIs</button>
+  <!-- accordion -->
+  
+  <div id="demo" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Benefit Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Benefit Elections v1</td>
+      <td>Request the list of benefit coverage which is effective for the participant (current year).</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Benefit Election v1</td>
+      <td>Request the details of a benefit coverage.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+ 
+ </div><!-- end card block -->
+  
+   
+   
+</div><!-- end card -->
+
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Flexible Spending Account (FSA) Management</h4>
+    <p class="card-text">This API supports Flexible Spending Accounts. It returns the list of accounts, corresponding balances, transactions against the account (e.g. claims, disbursements), and any cards which the user has associated to the account. Financial Accounts are accounts which hold monies of an account holder and have transactions which move monies in and out of the account. An example of a financial account is a Flexible Spending Account, a Commuter Account. These APIs support management of data against a financial account such as balances, transactions, card holders, money movement, etc…</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="demo1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Flexible Spending Account (FSA) Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Flexible Spending Account v1</td>
+      <td>Request the financial accounts of a particular type.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Flexible Spending Account Transaction v1
+</td>
+      <td>Request a set of account transactions</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Retirement Plan</h4>
+    <p class="card-text">Retirement Plans communicates the list of retirement plans that an individual has based on an election or a core benefit provided by the employer. The list provides references to the details of each retirement plan. Each retirement plan provides details of balance (vested/unvested) as of a valuation date as well as investment allocations and loan details.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="demo2" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Retirement Plan</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Retirement Plan Election v1</td>
+      <td>Request the list of retirement plans for an Associate with an Organization. Examples are 401k and Roth – IRA</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Retirement Plan Details v1
+</td>
+      <td>Request the details of the retirement plan</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+<!-- end accordion -->
+  </div><!-- end demo -->
+  </div><!-- end card block -->
+     </div><!-- end card -->
+     </div><!-- end col -->
+     
+     </div><!-- end row -->
+     
+<!-- end talent domain -->
+<div class="row">
+     <div class="col-md-12">
+     <div class="card">
+     <h4 class="card-header">Tax Domain APIs</h4>
+ <div class="card-block">
+ 
+ 
+     <h6 class="card-title">Summary</h6>
+     <p class="card-text">
+       The Tax domain includes information related to credit screening.
+     </p>
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain1">Show APIs by group</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain1" class="collapse">
+<!-- inside accordion -->
+ 
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Benefit Management</h4>
+    <p class="card-text">Participant Benefit Elections is the list of elections made by a participant for organization provided benefits. This specification details the Election Summary which is a list of health and welfare benefits Elections which the participant has (in force and future), and the Election Detail which gives the details of a particular benefit election.</p>
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Show related APIs</button>
+  <!-- accordion -->
+  
+  <div id="demo" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Benefit Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Benefit Elections v1</td>
+      <td>Request the list of benefit coverage which is effective for the participant (current year).</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Benefit Election v1</td>
+      <td>Request the details of a benefit coverage.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+ 
+ </div><!-- end card block -->
+  
+   
+   
+</div><!-- end card -->
+
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Flexible Spending Account (FSA) Management</h4>
+    <p class="card-text">This API supports Flexible Spending Accounts. It returns the list of accounts, corresponding balances, transactions against the account (e.g. claims, disbursements), and any cards which the user has associated to the account. Financial Accounts are accounts which hold monies of an account holder and have transactions which move monies in and out of the account. An example of a financial account is a Flexible Spending Account, a Commuter Account. These APIs support management of data against a financial account such as balances, transactions, card holders, money movement, etc…</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="demo1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Flexible Spending Account (FSA) Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Flexible Spending Account v1</td>
+      <td>Request the financial accounts of a particular type.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Flexible Spending Account Transaction v1
+</td>
+      <td>Request a set of account transactions</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Retirement Plan</h4>
+    <p class="card-text">Retirement Plans communicates the list of retirement plans that an individual has based on an election or a core benefit provided by the employer. The list provides references to the details of each retirement plan. Each retirement plan provides details of balance (vested/unvested) as of a valuation date as well as investment allocations and loan details.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="demo2" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Retirement Plan</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Retirement Plan Election v1</td>
+      <td>Request the list of retirement plans for an Associate with an Organization. Examples are 401k and Roth – IRA</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Retirement Plan Details v1
+</td>
+      <td>Request the details of the retirement plan</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+<!-- end accordion -->
+  </div><!-- end demo -->
+  </div><!-- end card block -->
+     </div><!-- end card -->
+     </div><!-- end col -->
+     
+     </div><!-- end row -->
+<!-- end tax domain -->
+
+<div class="row">
+     <div class="col-md-12">
+     <div class="card">
+     <h4 class="card-header">Time Domain APIs</h4>
+ <div class="card-block">
+ 
+ 
+     <h6 class="card-title">Summary</h6>
+     <p class="card-text">
+       The Time domain includes information regarding hours worked and employee attendance.
+     </p>
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#domain1">Show APIs by group</button>
+    
+    <!-- accordion -->
+  
+  <div id="domain1" class="collapse">
+<!-- inside accordion -->
+ 
+<div class="row">
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Benefit Management</h4>
+    <p class="card-text">Participant Benefit Elections is the list of elections made by a participant for organization provided benefits. This specification details the Election Summary which is a list of health and welfare benefits Elections which the participant has (in force and future), and the Election Detail which gives the details of a particular benefit election.</p>
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Show related APIs</button>
+  <!-- accordion -->
+  
+  <div id="demo" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Benefit Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Benefit Elections v1</td>
+      <td>Request the list of benefit coverage which is effective for the participant (current year).</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Benefit Election v1</td>
+      <td>Request the details of a benefit coverage.</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+ 
+ </div><!-- end card block -->
+  
+   
+   
+</div><!-- end card -->
+
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Flexible Spending Account (FSA) Management</h4>
+    <p class="card-text">This API supports Flexible Spending Accounts. It returns the list of accounts, corresponding balances, transactions against the account (e.g. claims, disbursements), and any cards which the user has associated to the account. Financial Accounts are accounts which hold monies of an account holder and have transactions which move monies in and out of the account. An example of a financial account is a Flexible Spending Account, a Commuter Account. These APIs support management of data against a financial account such as balances, transactions, card holders, money movement, etc…</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="demo1" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Flexible Spending Account (FSA) Management</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Flexible Spending Account v1</td>
+      <td>Request the financial accounts of a particular type.</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-benefit-elections-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Flexible Spending Account Transaction v1
+</td>
+      <td>Request a set of account transactions</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-benefit-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+
+    
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+
+<div class="col-sm-12">
+<!doctype HTML>
+<head></head>
+<body>
+<div class="card">
+  <h5 class="card-header">Benefits</h5>
+  <div class="card-block">
+    <h4 class="card-title">Retirement Plan</h4>
+    <p class="card-text">Retirement Plans communicates the list of retirement plans that an individual has based on an election or a core benefit provided by the employer. The list provides references to the details of each retirement plan. Each retirement plan provides details of balance (vested/unvested) as of a valuation date as well as investment allocations and loan details.</p>
+ 
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Show related APIs</button>
+    
+    <!-- accordion -->
+  
+  <div id="demo2" class="collapse">
+  
+  <h4>
+ Available APIs: <small>Benefits > Retirement Plan</small>
+ </h4>
+     <table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>API Name</th>
+      <th>Description</th>
+      <th>Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Retirement Plan Election v1</td>
+      <td>Request the list of retirement plans for an Associate with an Organization. Examples are 401k and Roth – IRA</td>
+      <td>    <a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-election-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Retirement Plan Details v1
+</td>
+      <td>Request the details of the retirement plan</td>
+      <td><a href="https://developers.adp.com/api-explorer/resource/external-retirement-plan-details-v1/" class="btn btn-primary">View API</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+  </div>
+ 
+  </div><!-- end card block -->
+</div><!-- end card -->
+</div><!-- end col -->
+
+</div><!-- end row -->
+<!-- end accordion -->
+  </div><!-- end demo -->
+  </div><!-- end card block -->
+     </div><!-- end card -->
+     </div><!-- end col -->
+     
+     </div><!-- end row -->
+     <!-- end time domain -->
+
+     
+     
+    </div><!-- end container -->
+    </body>
+    </html>
